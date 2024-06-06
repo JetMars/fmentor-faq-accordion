@@ -1,4 +1,9 @@
 :root {
+	--main-font-size: 62.5%;
+	--color-white: hsl(0, 0%, 100%);
+	--color-pink: hsl(275, 100%, 97%);
+	--color-grayish-purple: hsl(292, 16%, 49%);
+	--color-dark-purple: hsl(292, 79%, 37%);
 }
 
 * {
@@ -10,5 +15,21 @@
 html,
 body {
 	max-width: 100vw;
+	font-size: var(--main-font-size);
 	overflow-x: hidden;
+	background-image: url('../../public/background/background-pattern-mobile.svg');
+	background-color: var(--color-pink);
+	background-repeat: no-repeat;
+}
+
+@media (min-width: 376px) {
+	body {
+		background-image: url('../../public/background/background-pattern-desktop.svg');
+	}
+}
+
+@media (min-width: 1441px) {
+	body {
+		background-image: none;
+	}
 }
