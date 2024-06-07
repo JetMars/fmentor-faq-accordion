@@ -14,10 +14,6 @@
 	color: var(--color-dark-purple);
 }
 
-.title:focus {
-	outline: 2px ridge rgba(85, 85, 85, 0.6);
-}
-
 .desc {
 	margin-top: 3.3rem;
 	font-weight: 600;

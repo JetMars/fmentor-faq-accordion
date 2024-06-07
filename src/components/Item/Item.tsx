@@ -13,10 +13,14 @@ import styles from './item.module.css';
 export default function Item({ title, desc }: IAccordionProps) {
 	const [isActive, setActive] = React.useState(false);
 
-	const handleActiveDescription = (e: React.KeyboardEvent<HTMLDivElement>) => {
+	const activeKeyBoard = (e: React.KeyboardEvent<HTMLDivElement>) => {
 		if (e.code === 'Space' || e.code === 'Enter') {
 			setActive(!isActive);
 		}
+	};
+
+	const showDescription = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+		setActive(!isActive);
 	};
 
 	return (
@@ -24,8 +28,8 @@ export default function Item({ title, desc }: IAccordionProps) {
 			<div
 				tabIndex={0}
 				className={styles.title}
-				onClick={() => setActive(!isActive)}
-				onKeyDown={handleActiveDescription}
+				onClick={showDescription}
+				onKeyDown={activeKeyBoard}
 			>
 				<div className={styles.text}>{title}</div>
 				{isActive ? (
