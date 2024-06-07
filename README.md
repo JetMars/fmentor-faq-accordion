@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/JetMars/fmentor-faq-accordion)
-- Live Site URL: [Versel](fmentor-faq-accordion.vercel.app)
+- Live Site URL: [Versel](https://fmentor-faq-accordion.vercel.app)
 
 ## My process
 
